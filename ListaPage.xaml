@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ListaPessoaApp.ListaPage"
+             Title="Lista Pessoa">
+    <StackLayout>
+        
+        <ListView x:Name="listView_dadisPessoas">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell
+                        Text="{Binding nomeCompleto}"
+                        Detail="{Binding dtCadastro}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+       </ListView>
+        
+    </StackLayout>
+</ContentPage>
